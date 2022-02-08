@@ -1,6 +1,6 @@
 
 -- вводим имя сети и пароль сюда
-ssid,pass = "HONOR 20e","123456789";
+ssid,pass = "введите имя сети","пароль сети";      -- обязательно заполнить
 gpio.mode(4, gpio.OUTPUT)
 if (file.open('wificonf') == true)then
    ssid = string.gsub(file.readline(), "\n", "");
